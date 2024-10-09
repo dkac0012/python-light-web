@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
-app.secret_key = 'supersecretkey'
+app.secret_key = '해당키값'
 
 # 사용자 데이터 (실제 구현에서는 데이터베이스를 사용해야 함)
 users = {
