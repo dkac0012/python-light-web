@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>마이페이지</title>
+</head>
+<body>
+    <h1>마이페이지</h1>
+    <form method="post" action="{{ url_for('mypage') }}">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" value="{{ user }}">
+        <br>
+        <button type="submit">수정</button>
+    </form>
+</body>
+</html>
