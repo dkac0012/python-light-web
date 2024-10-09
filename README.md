@@ -22,7 +22,7 @@ source .venv/bin/activate
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
-app.secret_key = 'supersecretkey'
+app.secret_key = 'key'
 
 users = {
     'testuser': {'password': 'testpassword', 'name': 'Test User'}
